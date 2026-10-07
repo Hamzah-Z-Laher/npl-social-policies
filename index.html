@@ -64,18 +64,22 @@
     margin-bottom: 40px;
   }
   .crest {
-    width: 44px;
-    height: 44px;
+    width: 48px;
+    height: 48px;
     border-radius: 10px;
-    background: var(--accent-soft);
-    color: var(--accent);
+    background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Source Serif 4", Georgia, serif;
-    font-weight: 700;
-    font-size: 18px;
     flex-shrink: 0;
+    overflow: hidden;
+    padding: 4px;
+  }
+  .crest img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
   }
   .masthead-text .eyebrow {
     text-transform: uppercase;
@@ -190,7 +194,7 @@
 
 <div class="page">
   <header class="masthead">
-    <div class="crest">NPL</div>
+    <div class="crest"><img src="icon-192.png" alt="NPL logo"></div>
     <div class="masthead-text">
       <div class="eyebrow">National Premier League · Joburg Hockey League · Tshwane Prime League</div>
       <h1>NPL Social Automation</h1>
